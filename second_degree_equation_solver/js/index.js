@@ -25,6 +25,10 @@ function solveQuadratic() {
 	resultsSection.innerHTML += '<label>x = ' + x1 + '</label> <label>x = ' + x2;
 
 	plotQuadraticFunction(a, b, c);
+
+	var equationLabel = document.querySelector("#exampleEquation");
+	equationLabel.innerHTML = "";
+	equationLabel.innerHTML += a + "x^2+" + b + "x+" + c;
 }
 
 function plotQuadraticFunction(a, b, c) {
