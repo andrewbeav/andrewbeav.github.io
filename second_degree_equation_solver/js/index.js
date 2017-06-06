@@ -22,7 +22,8 @@ function solveQuadratic() {
 
 	var resultsSection = document.querySelector("#results");
 	resultsSection.innerHTML = "";
-	resultsSection.innerHTML += '<label>x = ' + x1 + '</label> <label>x = ' + x2;
+	if (x1 !== x2) resultsSection.innerHTML += '<label>x = ' + x1 + '</label> <label>x = ' + x2;
+	else resultsSection.innerHTML += '<label>x = ' + x1;
 
 	plotQuadraticFunction(a, b, c);
 
