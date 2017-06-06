@@ -1,0 +1,43 @@
+body {
+	background-color: #606060;
+}
+
+section {
+	border: 4px solid grey;
+	border-radius: 15px;
+	box-shadow: 5px 5px 5px grey;
+	float: left;
+	height: 360px;
+	padding: 20px;
+	margin: 10px;
+}
+
+#inputFields {
+	width: 250;
+}
+
+#outputSection {
+	width: 550px;
+	height: 450px;
+}
+
+#results {
+	margin: 10px;
+}
+
+#functionPlot {
+	background: #E0E0E0;
+}
+
+label {
+	background-color: #3333FF;
+	border: 2px solid black;
+	border-radius: 5px;
+	margin: 5px;
+	padding: 1px;
+}
+
+input {
+	background: #CCFFFF;
+	margin: 8px;
+}

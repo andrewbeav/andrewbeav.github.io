@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Quadratic Equation Solver</title>
+	<script src="js/index.js"></script>
+	<script src="https://d3js.org/d3.v3.min.js"></script>
+	<script src="https://mauriciopoppe.github.io/function-plot/js/function-plot.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body onload="solveQuadratic();">
+	<section id="inputFields">
+		<label id="exampleEquation">ax^2 + bx + c</label>
+		<br>
+
+		<label for="a">a: </label>
+		<input type=number id="aValue" value=1 step=1 oninput="solveQuadratic();"></input>
+		<br>
+
+		<label for="b">b: </label>
+		<input type=number id="bValue" value=2 step=1 oninput="solveQuadratic();"></input>
+		<br>
+
+		<label for="c">c: </label>
+		<input type=number id="cValue" value=1 step=1 oninput="solveQuadratic();"></input>
+		<br>
+	</section>
+
+	<section id="outputSection">
+		<label>Roots of the Equation: </label>
+		<div id="results"></div>
+		<div id="functionPlot"></div>
+	</section>
+</body>
+</html>
