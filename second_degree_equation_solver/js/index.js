@@ -1,3 +1,11 @@
+window.onload = init;
+
+function init() {
+	solveQuadratic();
+	document.querySelector("#aValue").oninput = solveQuadratic;
+	document.querySelector("#bValue").oninput = solveQuadratic;
+	document.querySelector("#cValue").oninput = solveQuadratic;
+}
 function solveQuadratic() {
 	var a = document.querySelector("#aValue").value;
 	var b = document.querySelector("#bValue").value;
